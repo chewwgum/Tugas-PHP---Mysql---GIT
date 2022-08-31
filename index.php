@@ -27,7 +27,7 @@
             <?php
             include 'koneksi.php';
             $no = 1;
-            $data = mysqli_query($koneksi, "SELECT * FROM tb_gedung");
+            $data = mysqli_query($koneksi, "SELECT * FROM tb_gedung ORDER BY id Desc");
             while($d = mysqli_fetch_array($data)){
                 ?>
                 <tr>
